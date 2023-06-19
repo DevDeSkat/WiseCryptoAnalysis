@@ -66,7 +66,7 @@ function Landing(props) {
     <React.Fragment>
       <Head>
         <title>
-          { brand.crypto.name + ' - Home Page' }
+          { brand.crypto.name }
         </title>
       </Head>
       <CssBaseline />
