@@ -21,19 +21,18 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 16.17.0
+          cache: 'yarn'
 
       - name: Cache Node Modules
         id: cacheFrontend
         uses: actions/cache@v2
         with:
           path: /node_modules
-          key: ${{ runner.os }}-build-cache-frontend-${{ hashFiles('/yarn.lock') }}
+          key: ${{ runner.os }}-build-cache-frontend-${{ hashFiles('**/yarn.lock') }}
 
       - name: Install Dependencies
         if: steps.cache.outputs.cache-hit != 'true'
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: install
+        run: yarn install
 
       - name: add ENV
         run: echo "${{ secrets.ENV }}" > .env
@@ -43,17 +42,14 @@ jobs:
     runs-on: zodiac
 
     steps:
-      - name: Use Node.js 16.17.0
-        uses: actions/setup-node@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 16.17.0
-        env:
-          NODE_OPTIONS: "--openssl-legacy-provider"
+          cache: 'yarn'
 
       - name: Build
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: build
+        run: yarn build
           
   finalize:
     needs: build
