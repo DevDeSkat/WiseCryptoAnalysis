@@ -20,6 +20,20 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 16.17.0
+
+      - name: Cache Node Modules
+        id: cache
+        uses: actions/cache@v2
+        with:
+          path: /node_modules
+          key: ${{ runner.os }}-build-cache-${{ hashFiles('package-lock.json') }}
+
+      - name: Install Dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm i
+
+      - name: add ENV
+        run: echo "${{ secrets.ENV }}" > .env
   
   build:
     needs: prepere
@@ -27,11 +41,8 @@ jobs:
     runs-on: zodiac
 
     steps:
-      - name: add ENV
-        run: echo "${{ secrets.ENV }}" > .env
-
       - name: Build
-        run: yarn build
+        run: npm run build
           
   finalize:
     needs: build
