@@ -7,6 +7,7 @@ on:
 
 jobs:
   prepere:
+    environment: Website
     runs-on: zodiac
 
     steps:
@@ -37,7 +38,6 @@ jobs:
   
   build:
     needs: prepere
-    environment: Website
     runs-on: zodiac
 
     steps:
