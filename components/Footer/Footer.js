@@ -3,14 +3,11 @@ import PropTypes from 'prop-types';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import ButtonBase from '@mui/material/ButtonBase';
 import Link from '@mui/material/Link';
 import IconButton from '@mui/material/IconButton';
 import { useTranslation } from 'next-i18next';
-import logo from '~/public/images/crypto-logo.svg';
+import logo from '~/public/images/crypto-logo.png';
 import brand from '~/public/text/brand';
-import imgApi from '~/public/images/imgAPI';
-import SelectLang from '../LangSwitch/Select';
 import useStyles from './footer-style';
 
 function Copyright() {
@@ -27,24 +24,9 @@ const footer = {
   link: ['#resource', '#another-resource', '#final-resource', '#privacy-policy', '#terms-of-use'],
 };
 
-const news = [
-  {
-    text: 'Sed imperdiet enim ligula vitae viverra.',
-    img: imgApi.photo[5]
-  },
-  {
-    text: 'Sed imperdiet enim ligula vitae viverra.',
-    img: imgApi.photo[6]
-  },
-  {
-    text: 'Sed imperdiet enim ligula vitae viverra.',
-    img: imgApi.photo[7]
-  }
-];
-
 function Footer(props) {
   const { classes, cx } = useStyles();
-  const { invert, toggleDir } = props;
+  const { invert } = props;
 
   // Translation Function
   const { t } = useTranslation('common');
@@ -78,22 +60,7 @@ function Footer(props) {
               </ul>
             </div>
           </Grid>
-          <Grid item xs={12} md={4}>
-            {news.map((item, index) => (
-              <ButtonBase className={classes.blogItem} href="#" key={index.toString()}>
-                <figure>
-                  <img src={item.img} alt="thumb" />
-                </figure>
-                <div className={classes.listText}>
-                  <Typography variant="button" className={classes.category}>
-                    {t('crypto-landing.footer_news')}
-                  </Typography>
-                  <Typography display="block" component="span">Sed imperdiet enim ligula vitae viverra. </Typography>
-                </div>
-              </ButtonBase>
-            ))}
-          </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={5}>
             <div className={classes.socmed}>
               <IconButton aria-label="FB" className={classes.margin} size="small">
                 <i className="ion-logo-twitter" />
@@ -108,7 +75,6 @@ function Footer(props) {
                 <i className="ion-logo-linkedin" />
               </IconButton>
             </div>
-            <SelectLang toggleDir={toggleDir} />
             <Copyright />
           </Grid>
         </Grid>
@@ -119,7 +85,6 @@ function Footer(props) {
 
 Footer.propTypes = {
   invert: PropTypes.bool,
-  toggleDir: PropTypes.func,
 };
 
 Footer.defaultProps = {

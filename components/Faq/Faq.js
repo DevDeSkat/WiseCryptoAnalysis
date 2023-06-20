@@ -16,24 +16,24 @@ import useStyles from './faq-style';
 
 const faqData = [
   {
-    q: 'Pellentesque ac bibendum tortor?',
-    a: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. '
+    q: 'What is Cryptowise?',
+    a: 'Cryptowise is a team dedicated to the study of markets and trading strategies in the cryptocurrency industry. We provide valuable insights, analysis, and expertise to help individuals make informed decisions in the crypto space.'
   },
   {
-    q: 'In mi nulla, fringilla vestibulum?',
-    a: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. '
+    q: 'How can Cryptowise help me?',
+    a: 'Cryptowise offers a range of services and resources to assist you in navigating the cryptocurrency market. We provide market analysis, trading strategies, educational content, and up-to-date news to empower you with knowledge and enhance your crypto trading experience.'
   },
   {
-    q: 'Quisque lacinia purus ut libero?',
-    a: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. '
+    q: 'Is Cryptowise a financial advisory service?',
+    a: 'No, Cryptowise does not provide personalized financial advice. Our purpose is to educate and inform our audience about cryptocurrency markets and trading strategies. We encourage you to conduct your own research and consult with financial professionals before making any investment decisions.'
   },
   {
-    q: 'Quisque ut metus sit amet augue?',
-    a: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. '
+    q: "How can I stay updated with Cryptowise's latest information?",
+    a: 'To stay updated with Cryptowise, you can visit our website at [insert URL here]. Additionally, you can follow us on social media platforms such as Twitter, Facebook, and LinkedIn, where we regularly share market insights, educational content, and important updates.'
   },
   {
-    q: 'Pellentesque ac bibendum tortor?',
-    a: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. '
+    q: 'How can I contact the Cryptowise team?',
+    a: 'You can reach out to us by sending an email to support@wisecryptoanalysis.com or by using the contact form on our website. We value your feedback, questions, and suggestions, and we`ll do our best to respond promptly.'
   },
 ];
 

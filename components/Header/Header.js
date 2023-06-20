@@ -10,7 +10,6 @@ import { useTheme } from '@mui/material/styles';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
 import { useTranslation } from 'next-i18next';
-import Settings from './Settings';
 import MarketPrice from './MarketPrice';
 import MobileMenu from './MobileMenu';
 import routeLink from '~/public/text/link';
@@ -51,15 +50,12 @@ function Header(props) {
   const { classes, cx } = useStyles();
   const theme = useTheme();
   const {
-    onToggleDark,
-    onToggleDir,
     invert,
   } = props;
   const { t, i18n } = useTranslation('common');
   const curLang = '/' + i18n.language;
 
   const isDesktop = useMediaQuery(theme.breakpoints.up('lg'));
-  const isTablet = useMediaQuery(theme.breakpoints.down('md'));
   const isMobile = useMediaQuery(theme.breakpoints.down('lg'));
   const [menuList] = useState([
     createData(navMenu[0], '#' + navMenu[0], 100),
@@ -144,19 +140,6 @@ function Header(props) {
             {!isMobile && (
               <Divider className={classes.divider} />
             )}
-            <nav className={cx(classes.navMenu, classes.navAuth)}>
-              {!isTablet && (
-                <Fragment>
-                  <Button href={curLang + routeLink.crypto.login}>
-                    {t('crypto-landing.header_login')}
-                  </Button>
-                  <Button href={curLang + routeLink.crypto.register} variant="contained" color="secondary" className={classes.button}>
-                    {t('crypto-landing.header_register')}
-                  </Button>
-                </Fragment>
-              )}
-              <Settings toggleDark={onToggleDark} toggleDir={onToggleDir} invert={invert} />
-            </nav>
           </div>
         </Container>
       </AppBar>
@@ -165,8 +148,6 @@ function Header(props) {
 }
 
 Header.propTypes = {
-  onToggleDark: PropTypes.func.isRequired,
-  onToggleDir: PropTypes.func.isRequired,
   invert: PropTypes.bool,
 };
 

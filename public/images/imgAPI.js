@@ -1,16 +1,16 @@
 const imgAPI = {
   avatar: [
-    '/images/avatars/pp_girl.svg',
-    '/images/avatars/pp_girl2.svg',
-    '/images/avatars/pp_girl3.svg',
-    '/images/avatars/pp_girl4.svg',
-    '/images/avatars/pp_girl5.svg',
-    '/images/avatars/pp_girl.svg',
-    '/images/avatars/pp_boy.svg',
-    '/images/avatars/pp_boy2.svg',
-    '/images/avatars/pp_boy3.svg',
-    '/images/avatars/pp_boy4.svg',
-    '/images/avatars/pp_boy5.svg'
+    '/images/avatars/pp_girl.png',
+    '/images/avatars/pp_girl2.png',
+    '/images/avatars/pp_girl3.png',
+    '/images/avatars/pp_girl4.jpg',
+    '/images/avatars/pp_girl5.png',
+    '/images/avatars/pp_girl.png',
+    '/images/avatars/pp_boy.png',
+    '/images/avatars/pp_boy2.png',
+    '/images/avatars/pp_boy3.png',
+    '/images/avatars/pp_boy4.png',
+    '/images/avatars/pp_boy5.png'
   ],
   photo: [
     'https://via.placeholder.com/675x900/e1ad92/ffffff',
@@ -29,10 +29,10 @@ const imgAPI = {
     'https://via.placeholder.com/640x425/c4cdff/757575',
   ],
   crypto: [
-    '/images/crypto/hexa-orange.png',
-    '/images/crypto/hexa-green.png',
-    '/images/crypto/hexa-orange.png',
-    '/images/crypto/hexa-green.png',
+    '/images/crypto/hexa-1.png',
+    '/images/crypto/hexa-2.png',
+    '/images/crypto/hexa-3.png',
+    '/images/crypto/hexa-4.png',
     'https://via.placeholder.com/600x341/cac142/FFFFFF',
     'https://via.placeholder.com/1280x677/204473/FFFFFF',
     '/images/crypto/crypto_laptop.png'

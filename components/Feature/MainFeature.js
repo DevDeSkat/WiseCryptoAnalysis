@@ -13,7 +13,6 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Grid from '@mui/material/Grid';
 import Zoom from '@mui/material/Zoom';
 import { useTranslation } from 'next-i18next';
-import imgAPI from '~/public/images/imgAPI';
 import yt from '~/youtube';
 import { useText } from '~/theme/common';
 import Title from '../Title';
@@ -97,9 +96,9 @@ function MainFeature() {
               {t('crypto-landing.mainfeature_subtitle')}
             </Typography>
             <Paper className={classes.video}>
-              <figure>
+              {/* <figure>
                 <img src={imgAPI.crypto[4]} alt="cover" />
-              </figure>
+              </figure> */}
               <IconButton className={classes.playBtn} onClick={handleClickOpen} size="large">
                 <span className="ion-ios-play" />
               </IconButton>

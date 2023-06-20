@@ -214,7 +214,7 @@ const promotionStyles = makeStyles({ uniqId: 'promotion' })((theme, _params, cla
     top: 0,
     left: 0,
     zIndex: 2,
-    opacity: 0.5
+    opacity: 0.1
   },
   imgWrap: {
     position: 'relative',

@@ -23,7 +23,6 @@ function Benefit() {
     <div className={classes.root}>
       <div className={classes.parallaxWrap}>
         <Parallax
-          bgImage={imgAPI.crypto[5]}
           bgImageAlt="benefit"
           strength={0}
         >
@@ -39,14 +38,14 @@ function Benefit() {
                   {t('crypto-landing.benefit_title')}
                 </Typography>
                 <ul className={classes.list}>
-                  <li>Vestibulum faucibus</li>
-                  <li>Vivamus sit amet interdum elit</li>
-                  <li>Donec dignissim</li>
-                  <li>Quisque lacinia purus</li>
-                  <li>Fusce placerat enim et odio molestie</li>
-                  <li>Pellentesque ac bibendum tortor</li>
-                  <li>Lorem ipsum dolor sit amet</li>
-                  <li>And more…</li>
+                  <li>In-depth Market Analysis</li>
+                  <li>Trading Strategies</li>
+                  <li>Educational Resources</li>
+                  <li>Timely News and Updates</li>
+                  <li>Risk Management</li>
+                  <li>Community Engagement</li>
+                  <li>Professional Support</li>
+                  <li>And more...</li>
                 </ul>
               </div>
             </Grid>

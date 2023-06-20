@@ -13,27 +13,21 @@ import imgAPI from '~/public/images/imgAPI';
 const sliderData = [
   {
     image: imgAPI.crypto[0],
-    title: 'Sed imperdiet enim ligula',
-    desc: 'Sed imperdiet enim ligula vitae viverra. Vivamus sit amet interdum elit.',
-    date: '12 Jul - 10 Aug'
+    title: 'Save on Our Services',
+    desc: "Save big on Cryptowise services and unlock your crypto potential! Don't miss out on limited-time discounts to gain expert insights, educational programs, and top-notch support. Level up your crypto game while saving money. Grab the opportunity now!",
+    date: '16 Jun - 20 Jul'
   },
   {
     image: imgAPI.crypto[1],
-    title: 'Fusce placerat enim et odio',
-    desc: 'Sed imperdiet enim ligula vitae viverra. Vivamus sit amet interdum elit.',
+    title: 'Sign Up for a 7-Day Trial',
+    desc: "Experience Cryptowise for free! Sign up now for a 7-day trial and unlock the power of our expert insights, educational programs, and market analysis. Dive into the world of crypto with confidence and discover what Cryptowise has to offer. Don't miss out, start your trial today",
     date: '12 Jul - 10 Aug'
   },
   {
     image: imgAPI.crypto[2],
-    title: 'Pellentesque ac bibendum tortor',
-    desc: 'Sed imperdiet enim ligula vitae viverra. Vivamus sit amet interdum elit.',
-    date: '12 Jul - 10 Aug'
-  },
-  {
-    image: imgAPI.crypto[3],
-    title: 'Pellentesque ac bibendum tortor',
-    desc: 'Sed imperdiet enim ligula vitae viverra. Vivamus sit amet interdum elit.',
-    date: '12 Jul - 10 Aug'
+    title: 'Why choose Cryptowise?',
+    desc: 'Because we deliver results! With spot-on market analysis, a fantastic educational program, and up-to-date insights, Cryptowise is the top choice for anyone in the crypto world. Join the community and experience the difference for yourself. Your crypto success starts here!',
+    date: ''
   }
 ];
 
@@ -84,13 +78,17 @@ function Promotion() {
                     <Typography component="p">
                       {item.desc}
                     </Typography>
-                    <section className={classes.time}>
-                      <Typography component="h6">
-                        {t('crypto-landing.promo_periode')}
-                        :&nbsp;
-                        {item.date}
-                      </Typography>
-                    </section>
+                    {item.date.length
+                      ? (
+                        <section className={classes.time}>
+                          <Typography component="h6">
+                            {t('crypto-landing.promo_periode')}
+                            :&nbsp;
+                            {item.date}
+                          </Typography>
+                        </section>
+                        )
+                    : null}
                   </Paper>
                 </Grid>
               </Grid>

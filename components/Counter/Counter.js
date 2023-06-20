@@ -53,7 +53,7 @@ function Counter() {
           <Typography variant="h4" gutterBottom className={text.subtitle}>
             {t('crypto-landing.footer_waiting')}
           </Typography>
-          <Button variant="contained" href={curLang + routeLink.crypto.register} color="secondary" size="large" className={classes.button}>
+          <Button variant="contained" href={curLang + routeLink.crypto.contact} color="secondary" size="large" className={classes.button}>
             {t('crypto-landing.getstarted')}
           </Button>
         </div>

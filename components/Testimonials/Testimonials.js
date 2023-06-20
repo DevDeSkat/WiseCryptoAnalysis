@@ -14,37 +14,37 @@ import useStyle from './testi-style';
 
 const testiContent = [
   {
-    text: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.',
+    text: 'I`ve been following Cryptowise for months now, and their market research is spot on! It has helped me make informed decisions and increase my income in the bitcoin business. ',
     name: 'John Doe',
     avatar: imgApi.avatar[6],
     title: 'Chief Digital Officer',
   },
   {
-    text: 'Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper aliquet ultrices. Aenean facilisis vitae purus facilisis semper. Nam vitae scelerisque lorem, quis tempus libero.',
+    text: 'For beginners like me, Cryptowise offers a fantastic educational program. Their articles and lessons have helped me better understand the market by simplifying difficult bitcoin concepts.',
     name: 'Jean Doe',
     avatar: imgApi.avatar[7],
     title: 'Chief Digital Officer',
   },
   {
-    text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
+    text: 'To anyone interested in trading cryptocurrencies, I heartily recommend Cryptowise. Game-changer in the crypto space! 🚀',
     name: 'Jena Doe',
     avatar: imgApi.avatar[1],
     title: 'Graphic Designer',
   },
   {
-    text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
+    text: 'Their staff is knowledgeable, skilled, and constantly up to date on fashion. They provide useful insights that have considerably improved my trading methods.',
     name: 'Jovelin Doe',
     avatar: imgApi.avatar[2],
     title: 'Senior Graphic Designer',
   },
   {
-    text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
+    text: "The Cryptowise community is fantastic! They have a lively Discord group where people share ideas, discuss trading techniques, and provide support. It's a great spot to connect with like - minded people",
     name: 'Jihan Doe',
     avatar: imgApi.avatar[3],
     title: 'CEO Software House',
   },
   {
-    text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
+    text: 'Cryptowise has become my go - to source for crypto news. Their fast updates and research keep me also - informed about the marketplace experiences and help me stay ahead of the game',
     name: 'John Doe',
     avatar: imgApi.avatar[9],
     title: 'Senior Graphic Designer',

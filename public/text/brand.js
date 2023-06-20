@@ -3,7 +3,7 @@ module.exports = {
     name: 'cryptowise',
     desc: 'Wise Crypto Analysis - a team working on the study of markets and trading strategies',
     prefix: 'cryptowise',
-    footerText: 'Wise Crypto Analysis Theme 2021',
+    footerText: 'Wise Crypto Analysis 2023',
     logoText: 'cryptowise',
     projectName: 'Cryptowise',
     url: 'google.com',
