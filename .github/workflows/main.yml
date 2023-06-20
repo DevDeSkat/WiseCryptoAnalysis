@@ -43,6 +43,11 @@ jobs:
     runs-on: zodiac
 
     steps:
+      - name: Use Node.js 16.17.0
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.17.0
+
       - name: Build
         uses: borales/actions-yarn@v4
         with:
