@@ -47,8 +47,6 @@ jobs:
         with:
           node-version: 16.17.0
           cache: 'yarn'
-        env:
-          NODE_OPTIONS: "--openssl-legacy-provider"
 
       - name: Build
         run: yarn build
