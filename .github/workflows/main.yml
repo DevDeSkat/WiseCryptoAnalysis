@@ -1,0 +1,40 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  prepere:
+    runs-on: zodiac
+
+    steps:
+      - name: Stop all pm2 processes
+        run: pm2 stop all
+
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 16.17.0
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.17.0
+  
+  build:
+    environment: Website
+    runs-on: zodiac
+
+    steps:
+      - name: add ENV
+        run: echo "${{ secrets.ENV }}" > .env
+
+      - name: Build
+        run: yarn build
+          
+  finalize:
+    runs-on: zodiac
+
+    steps:
+      - name: Restart all pm2 processes
+        run: pm2 restart all
