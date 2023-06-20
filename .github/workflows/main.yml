@@ -23,11 +23,11 @@ jobs:
           node-version: 16.17.0
 
       - name: Cache Node Modules
-        id: cache
+        id: cacheFrontend
         uses: actions/cache@v2
         with:
           path: /node_modules
-          key: ${{ runner.os }}-build-cache-${{ hashFiles('package-lock.json') }}
+          key: ${{ runner.os }}-build-cache-frontend-${{ hashFiles('/package-lock.json') }}
 
       - name: Install Dependencies
         if: steps.cache.outputs.cache-hit != 'true'
