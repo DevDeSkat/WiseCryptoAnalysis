@@ -22,6 +22,7 @@ jobs:
           node-version: 16.17.0
   
   build:
+    needs: prepere
     environment: Website
     runs-on: zodiac
 
@@ -33,6 +34,7 @@ jobs:
         run: yarn build
           
   finalize:
+    needs: build
     runs-on: zodiac
 
     steps:
