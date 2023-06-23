@@ -9,6 +9,7 @@ import { useTranslation } from 'next-i18next';
 import logo from '~/public/images/crypto-logo.png';
 import brand from '~/public/text/brand';
 import useStyles from './footer-style';
+import logoTradingView from '~/public/images/trading-view-logo.svg';
 
 function Copyright() {
   return (
@@ -76,6 +77,9 @@ function Footer(props) {
               </IconButton>
             </div>
             <Copyright />
+            <a href="https://www.tradingview.com/">
+              <img src={logoTradingView} alt="logoTradingView" style={{ padding: '20px' }} />
+            </a>
           </Grid>
         </Grid>
       </div>

@@ -10,7 +10,7 @@ import Grid from '@mui/material/Grid';
 import { useTranslation } from 'next-i18next';
 import brand from '~/public/text/brand';
 import routerLink from '~/public/text/link';
-import logo from '~/public/images/crypto-logo.svg';
+import logo from '~/public/images/crypto-logo.png';
 import { useText } from '~/theme/common';
 import Parallax from '../Parallax/Hexagonal';
 import Decoration from './Decoration';
@@ -19,7 +19,7 @@ import useStyles from './form-style';
 function AuthFrame(props) {
   const { classes, cx } = useStyles();
   const theme = useTheme();
-  const { i18n } = useTranslation('common')
+  const { i18n } = useTranslation('common');
   const curLang = '/' + i18n.language;
 
   const { classes: text } = useText();

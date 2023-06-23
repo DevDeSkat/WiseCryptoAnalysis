@@ -13,7 +13,7 @@ import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator';
 import { useTranslation } from 'next-i18next';
 import brand from '~/public/text/brand';
 import routeLink from '~/public/text/link';
-import logo from '~/public/images/crypto-logo.svg';
+import logo from '~/public/images/crypto-logo.png';
 import { useText } from '~/theme/common';
 import Parallax from '../Parallax/Hexagonal';
 import Decoration from './Decoration';
