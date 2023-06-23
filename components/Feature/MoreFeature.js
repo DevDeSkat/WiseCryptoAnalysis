@@ -3,6 +3,7 @@ import {
   ThemeProvider, StyledEngineProvider,
   createTheme, useTheme
 } from '@mui/material/styles';
+import { CryptoCurrencyMarket } from 'react-ts-tradingview-widgets';
 import Container from '@mui/material/Container';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import ScrollAnimation from 'react-scroll-animation-wrapper';
@@ -189,6 +190,7 @@ function MoreFeature() {
             </Grid>
           </Grid>
         </div>
+        <CryptoCurrencyMarket colorTheme="dark" width="100%" height={400} />
       </Container>
     </div>
   );

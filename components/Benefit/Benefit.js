@@ -3,6 +3,7 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
+import { Timeline } from 'react-ts-tradingview-widgets';
 import Grid from '@mui/material/Grid';
 import { Parallax } from 'react-parallax';
 import { useTranslation } from 'next-i18next';
@@ -82,6 +83,7 @@ function Benefit() {
             </Grid>
           </Grid>
         </div>
+        <Timeline colorTheme="dark" feedMode="market" market="crypto" height={400} width="100%" />
       </Container>
     </div>
   );
