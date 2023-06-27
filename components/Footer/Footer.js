@@ -80,6 +80,13 @@ function Footer(props) {
             <a href="https://www.tradingview.com/">
               <img src={logoTradingView} alt="logoTradingView" style={{ padding: '20px' }} />
             </a>
+            <p style={{ fontSize: '12px' }}>
+              The charting solution is provided by
+              <a style={{ color: 'gray' }} href="https://www.tradingview.com/"> TradingView</a>
+              , a platform for traders and investors with sophisticated data: it lets you track particular symbols, e.g.
+              <a style={{ color: 'gray' }} href="https://www.tradingview.com/symbols/BTCUSD/"> BTC USD</a>
+              , as well as dive into a more advanced market analysis with sophisticated data like crypto market cap.
+            </p>
           </Grid>
         </Grid>
       </div>
